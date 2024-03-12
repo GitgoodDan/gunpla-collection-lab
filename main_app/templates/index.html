@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Gunpla Collection</h1>
+{% for model in gunpla %}
+<div class="card">
+    <a href="/gunpla/{{model.id}}">
+    <div class="card-content">
+        <div class="card-title">{{model.name}}</div>
+        <p>Series: {{model.series}}</p>
+        <p>Grade: {{model.grade}}</p>
+        <p>Scale: {{mode.scale}}</p>
+        <p>Description: {{model.description}}</p>
+    </div>
+    </a>
+</div>
+
+{% endfor %}{% endblock %}

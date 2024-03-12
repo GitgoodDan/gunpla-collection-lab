@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Gunpla Details</h1>
+
+<div class="card">
+    <div class="card-content">
+        <div class="card-title">{{gunpla.name}}</div>
+        <p>Series: {{gunpla.series}}</p>
+        <p>Grade: {{gunpla.grade}}</p>
+        <p>Scale: {{gunpla.scale}}</p>
+        <p>Description: {{gunpla.description|linebreaks}}</p>
+    </div>
+</div>
+
+{% endblock %}
