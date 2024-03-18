@@ -11,6 +11,9 @@
         <p>Scale: {{gunpla.scale}}</p>
         <p>Description: {{gunpla.description|linebreaks}}</p>
     </div>
+    <div class="card-action">
+        <a href="{% url 'gunpla_update' gunpla.id %}">Edit</a>
+        <a href="{% url 'gunpla_delete' gunpla.id %}">Delete</a>
 </div>
 
 {% endblock %}
